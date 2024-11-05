@@ -1,0 +1,54 @@
+@import '_null.scss';
+@import '_mixin';
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+html {
+  &.lock {
+    overflow: hidden;
+  }
+}
+body {
+  color: $black;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-family: $regular;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+main {
+  flex: 100%;
+}
+
+[class*='__container'] {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  @media (max-width: $mobile) {
+    padding: 0px 10px;
+  }
+}
+
+section {
+  margin-bottom: 100px;
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+}
+
+@import '_header';
+@import '_intro';
+@import '_about';
+@import '_awards';
+@import '_gallery';
+@import '_win';
+@import '_why';
+@import '_rules';
+@import '_footer';

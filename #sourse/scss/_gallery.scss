@@ -1,0 +1,35 @@
+.gallery {
+  &__container {
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+    color: $main;
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex: 0 1 calc(33.333% - 20px);
+    border-radius: 9px;
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0px 2.777125835418701px 33.32551574707031px 0px rgba(197, 197, 197, 0.25);
+
+    img {
+      width: 100%;
+      border-radius: 9px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.awards {
+  background-color: $main;
+  color: $white;
+  padding: 70px 0px;
+  overflow: hidden;
+  position: relative;
+  &__decor {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    @media (max-width: $mobile) {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 100%;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 43.2px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    @media (max-width: $mobile) {
+      font-size: 25px;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.4px;
+    margin-bottom: 20px;
+  }
+}

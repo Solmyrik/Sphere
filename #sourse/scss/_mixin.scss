@@ -1,0 +1,53 @@
+html {
+  scroll-behavior: smooth;
+}
+// resolution
+$pc: 1430px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'AtypTextRegular';
+  src: local('☺'), url('../fonts/AtypTextRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AtypTextSemibold';
+  src: local('☺'), url('../fonts/AtypTextSemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+$regular: 'AtypTextRegular';
+$bold: 'AtypTextSemibold';
+
+$main: #00b8aa;
+$orange: #fea905;
+$white: #ffffff;
+$black: #222222;
+
+$fon: #f9f9f9;
+
+$main-light: #6155ae;
+$gray: #676767;
+$fon: #f9f9f9;
+$footer: #eaeaea;
+
+$light: #f5f5f5;
+$light-blue: #bbcef2;
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}

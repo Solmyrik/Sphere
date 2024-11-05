@@ -1,0 +1,53 @@
+.footer {
+  background-color: $footer;
+  padding: 50px 0px;
+  &__container {
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  &__menu {
+  }
+
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    @media (max-width: $mobile) {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $gray;
+    font-weight: 500;
+    transition: all 0.3s;
+    &:hover {
+      color: $main;
+    }
+  }
+
+  &__bottom {
+    color: #999;
+    font-size: 12.089px;
+  }
+}
+.header {
+  &__logo {
+  }
+
+  &__close {
+  }
+}

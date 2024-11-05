@@ -1,0 +1,110 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px 20px 15px;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  &__logo {
+    font-family: $bold;
+    color: #00b8aa;
+    font-size: 25px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-right: 100px;
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    transition: all 0.3s;
+    img {
+      width: 300px;
+      border-radius: 10px;
+      @media (max-width: 375px) {
+        width: 150px;
+      }
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__burger {
+    display: none;
+    @media (max-width: $mobile) {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+  &__close {
+    display: none;
+    @media (max-width: $mobile) {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 30px;
+      img {
+        width: 34px;
+      }
+    }
+  }
+}
+.menu {
+  &__body {
+    @media (max-width: $mobile) {
+      transform: translate(100%, 0%);
+      transition: transform 0.8s;
+      position: fixed;
+      width: 250px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      overflow: auto;
+      padding-top: 30px;
+      padding: 80px 10px 30px 10px;
+      background-color: $main;
+      z-index: 15;
+
+      &.active {
+        transform: translate(0px, 0%);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $gray;
+    font-family: $bold;
+    transition: all 0.3s;
+    &:hover {
+      color: $main;
+    }
+    @media (max-width: $mobile) {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
